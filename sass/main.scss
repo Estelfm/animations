@@ -1,0 +1,49 @@
+.mainContainer {
+    background-color: lightcoral;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+// .ball {
+//     height: 200px;
+//     width: 200px;
+//     border-radius: 400px;
+//     background-color: #fff;
+//     animation-duration: 5s;
+//     animation-name: breathe;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: ease-in-out;
+// }
+
+.ball2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 400px;
+    background-color: #fff;
+    animation-duration: 5s;
+    animation-name: breathe;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: rgba(255,255,255,.7) 0 0 50px;
+    margin: 0 auto;
+    
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+        box-shadow: rgba(255,255,255,.7) 0 0 50px;
+    }
+    50% {
+        transform: scale(1.5);
+        box-shadow: rgba(255,255,255,.9) 0 0 100px;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: rgba(255,255,255,.7) 0 0 50px;
+    }
+}
